@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Button Code */
+button{
+    padding: 20px;
+    color: blue;
+    font-weight: 600;
+    font-size: 30px;
+    border: 5px solid blue;
+    border-radius: 50px;
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+    background-color: aqua;
+    box-shadow: 4px 4px 1px whitesmoke;
+    cursor: pointer;
+}
+button span{
+    z-index: 4;
+}
+button::after{
+    content: "Click";
+    position: absolute;
+    width: 50%;
+    left: 0;
+    top: 0;
+    background-color: yellow;
+    z-index: 1;
+    height: 100%;
+    transition: 0.5s;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button:hover{
+    box-shadow: 5px 5px 5px yellowgreen;
+}
+button::before{
+    content: "Button";
+    position: absolute;
+    width: 50%;
+    right: 0;
+    top: 0;
+    background-color: green;
+    z-index: 1;
+    height: 100%;
+    transition: 0.5s;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button:hover::after{
+    width: 0;
+}
+button:hover::before{
+    width: 0;
+}
+/* Button Code */
+
+
+
+/* BlackWeb */
+.blackweb{
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    padding: 20px;
+    border: 5px solid black;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    font-size: 25px;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+.blackweb:hover{
+    background-color: black;
+    color: #fffFFF;
+}
+/* BlackWeb */
